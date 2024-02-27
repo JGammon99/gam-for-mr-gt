@@ -19,9 +19,9 @@ function MissionsPage() {
             </div>
             <h1 className='title-text'>Why do we need missions?</h1>
             <div className="about-text">
-                Like David Platt said in the video above, there are billions of people all across the world that do not know who Christ is. Each and every day, people in these areas die without ever hearing the gospel.
-                Jesus' last words on this earth were to His disciples for them to be witness to the <strong>ENDS OF THE EARTH</strong>. As followers of Christ, we are called to be witness and testify of what He has done to the world.
-                We cannot be okay with this! People all across the world need Christ, and Christians all across the world are to take part in sending and going in order to accomplish this command that Christ gave all of us. 
+                Like David Platt said in the video above, there are billions of people all across the world that do not know who Christ is. Each and every day, people in these areas die without ever hearing the gospel. We cannot be okay with this! 
+                Jesus' last words on this earth were to His disciples for them to be witnesses to the <strong>ENDS OF THE EARTH</strong>. As followers of Christ, we are called to witness and testify of what He has done to every nation.
+                People all across the world need Christ, and Christians all across the world are to take part in sending and going in order to accomplish this command that Christ gave all of us. 
             </div>
             
             <div className='heart-container'>
