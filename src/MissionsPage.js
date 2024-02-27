@@ -28,13 +28,15 @@ function MissionsPage() {
                 <h1 className='title-text'>Our Heart</h1>
                 <img src='./pro3000.jpg' alt='Project 3000' className='project-image'></img>
                 <div className="about-text">
-                    Through this silly and fun fundraiser, we have two equally important goals. One, is that we want to raise money to send college students all across the world to live out this command Christ has given us without it being a finacial burden.
-                    The second is to inform people of missions efforts all across the globe and help them be a part. One missionary effort that we want to highlight and inform people about is IMB's Project 3000 Missionary Exployers. These missionaries are being sent to scout unegaged and unreached
-                    people groups in order to find out how to better reach them and cultivate gospel access among these groups. We ask that you pray for these missionaries and the work they are doing in the edges of lostness, and we ask that you pray about if God is 
-                    calling you to serve Him in this capacity. 
+                    Through this silly and fun fundraiser, we have two equally important goals. The first is to raise money to send college students all across the 
+                    world to live out this command Christ has given us without it being a financial burden. The second is to inform others of missions efforts across the 
+                    globe and help them be a part. Specifically, One missionary effort that we want to highlight is IMB's Project 3000 Missionary Explorers. 
+                    Through this project missionaries are sent to scout unengaged and unreached people groups in order to find out how to better reach and cultivate 
+                    gospel access among these groups. We ask that you pray for these missionaries and the work they are doing in the edges of lostness. We also ask that 
+                    you pray about if God is calling you to serve Him in supporting missionary work or even going to proclaim his name to the ends of the earth! 
                 </div>
                 <div className='learn-more'>
-                    <a href='https://www.imb.org/missionary-explorer/' className='learn-more-btn'>Learn More</a>
+                    <a href='https://www.imb.org/missionary-explorer/' target="_blank" className='learn-more-btn' rel="noreferrer">Learn More</a>
                 </div>
             </div>
         </div>
