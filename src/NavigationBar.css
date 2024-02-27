@@ -1,0 +1,73 @@
+/* NavigationBar.css */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center; /* Center the navbar horizontally */
+  top: 0;
+  width: 100%;
+  background-color: #7278A0;
+  color: white;
+  padding: 10px; /* Adjusted padding for top and bottom, with 5% padding on left and right */
+  z-index: 1000;
+  border-bottom: solid black;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between; /* Space out the links evenly */
+  align-items: center; /* Center the links vertically */
+  width: 70%; /* Adjust width as needed */
+}
+
+.nav-links li {
+  text-align: center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active-link::after { /* Style for active link */
+  width: 100%;
+}
+
+/* Adjust the navbar styling for mobile screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 0px; /* Adjust padding for top and bottom */
+  }
+
+  .nav-links {
+    width: 100%; /* Make navigation links fill the entire width */
+    justify-content: space-around; /* Center the navigation links */
+  }
+
+  .nav-links li {
+    margin: 0; /* Remove margin for navigation items */
+  }
+
+  .nav-links li a {
+    font-size: 20px; /* Reduce font size for smaller screens */
+    font-weight: lighter;
+  }
+}

@@ -1,0 +1,60 @@
+/* MissionsPage.css */
+
+.page-container {
+    padding: 20px; /* Add padding to the page content */
+    overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+  }
+  
+  .title-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .verse {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .platt-container {
+    width: 100%;
+  }
+
+  .platt-vid{
+    width: 100%; /* Make the video fill its container horizontally */
+    height: 100%; /* Make the video fill its container vertically */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px;
+    border: solid black
+  }
+  
+  .missions-text {
+    text-align: center;
+  }
+
+  .project-image {
+    max-width: 70%;
+    border-radius: 10px;
+    border: solid black;
+    margin-bottom: 30px;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #ccbb44;
+}
+
+.learn-more-btn {
+    background-color: #EED666;
+    color: #1b365d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 2px;
+    border: solid #1b365d;
+    font-size: 24px;
+    font-family: Roboto;
+}
+.learn-more {
+    margin-top: 25px;
+    border:#1b365d;
+}

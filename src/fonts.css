@@ -1,0 +1,15 @@
+/* fonts.css */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: bold;
+    src: url('./Roboto-Bold.ttf') format('truetype');
+  }
+  
+  /* Add more @font-face rules for different font weights/styles as needed */
+  

@@ -1,0 +1,116 @@
+/* DonatePage.css */
+
+/* Style for donate title */
+.donate-title {
+  color: #333; /* Adjust color as needed */
+  margin-bottom: 20px;
+}
+
+/* Style for donate description */
+.donate-description {
+  font-size: 2em;
+  color: #333; /* Adjust color as needed */
+  margin-bottom: 50px; /* Adjust bottom margin */
+}
+
+/* Style for shirt images */
+.shirt-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin below the donate description */
+}
+
+.shirt-images div {
+  margin: 0 10px; /* Add space between images */
+}
+
+.shirt-image {
+  width: 100%; /* Make the image fill its container horizontally */
+  max-width: 500px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  border: solid black;
+}
+
+.image-label {
+  margin-top: 5px; /* Add space between image and label */
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Style for Google Form button */
+.google-form-button {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin below the donate description */
+}
+
+.google-form-btn {
+  background-color: #673ab7; /* Google Forms purple */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 30px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  margin-bottom: 5%;
+  font-family: Tangkiwood;
+}
+
+.google-form-btn:hover {
+  background-color: #5e35b1; /* Darker shade on hover */
+}
+
+/* Style for donation form */
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for donation amount input */
+.donation-amount {
+  width: 100%;
+  max-width: 300px; /* Limit the width for larger screens */
+  height: 40px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: beige;
+}
+
+/* Style for Venmo donate button */
+.venmo-donate-btn {
+  background-color: #008CFF; /* Venmo blue */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Adjust the border-radius to make it more rounded */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.venmo-donate-btn:hover {
+  background-color: #357ebd; /* Darker shade of Venmo blue on hover */
+}
+
+.venmo-logo {
+  width: auto; /* Set width to auto to maintain aspect ratio */
+  max-width: 70px; /* Set maximum width to control the size of the logo */
+  height: auto; /* Set height to auto to maintain aspect ratio */
+  max-height: 70px; /* Set maximum height to control the size of the logo */
+}
+
+/* Media query for smaller screens (e.g., phone size screens) */
+@media screen and (max-width: 768px) {
+  .shirt-images {
+    flex-direction: column; /* Change to a vertical column */
+    align-items: center; /* Align items at the center */
+  }
+
+  .shirt-images div {
+    margin: 10px 0; /* Adjust margin for spacing between images */
+  }
+}

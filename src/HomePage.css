@@ -1,0 +1,174 @@
+/* HomePage.css */
+:root {
+    --whatSize: 37px;
+    --seenSize: 90px;
+    --heardSize: 93px;
+    --seenMargin: -25px;
+    --heardMargin: -40px;
+    --voteSize: 37px;
+    --gammonSize: 90px;
+    --forSize: 93px;
+}
+.container {
+    position: relative; /* Make the container relative */
+}
+
+.text-container1 {
+    position: fixed; /* Position the text container absolutely */
+    z-index: 1; /* Ensure the text appears above the video */
+    display: flex;
+    justify-content: space-around;
+    top: 7%; /* Center vertically */
+    left: 10%;
+    align-items: center; /* Center vertically */
+}
+
+.fade-in1 {
+    animation: fadeIn 2.5s ease forwards;
+    color: white;
+    letter-spacing: 2px;
+    display: flex; /* Change to flex to maintain column shape */
+    flex-direction: column; /* Ensure column shape */
+    font-weight: normal;
+    opacity: 0;
+}
+
+.text-container2 {
+    position: fixed; /* Position the text container absolutely */
+    z-index: 2; /* Ensure the text appears above the video */
+    display: flex;
+    justify-content: space-around;
+    top: 7%; /* Center vertically */
+    right: 10%;
+    align-items: center; /* Center vertically */
+}
+
+.fade-in2 {
+    animation: fadeIn 2.5s ease forwards;
+    animation-delay: 2s;
+    color: white;
+    letter-spacing: 2px;
+    display: flex; /* Change to flex to maintain column shape */
+    flex-direction: column; /* Ensure column shape */
+    align-items: center;
+    font-weight: normal;
+    opacity: 0;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Lower z-index to ensure it's behind the text */
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Define media queries for responsive font sizes */
+@media screen and (max-width: 768px) {
+    #what {
+        font-size: calc(var(--whatSize)*.4);
+    }
+    
+    #seen {
+        font-size: calc(var(--seenSize)*.4);
+        margin-top: calc(var(--seenMargin)*.4);
+    }
+    
+    #heard {
+        font-size: calc(var(--heardSize)*.4);
+        margin-top: calc(var(--heardMargin)*.4);
+    }
+
+    #vote {
+        font-size: calc(var(--whatSize)*.4);
+    }
+    
+    #gammon {
+        font-size: calc(var(--seenSize)*.4);
+        margin-top: calc(var(--seenMargin)*.4);
+    }
+    
+    #for {
+        font-size: calc(var(--heardSize)*.4);
+        margin-top: calc(var(--heardMargin)*.4);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #what {
+        font-size: calc(var(--whatSize)*.75);
+    }
+    
+    #seen {
+        font-size: calc(var(--seenSize)*.75);
+        margin-top: calc(var(--seenMargin)*.75);
+    }
+    
+    #heard {
+        font-size: calc(var(--heardSize)*.75);
+        margin-top: calc(var(--heardMargin)*.75);
+    }
+
+    #vote {
+        font-size: calc(var(--whatSize)*.75);
+    }
+    
+    #gammon {
+        font-size: calc(var(--seenSize)*.75);
+        margin-top: calc(var(--seenMargin)*.75);
+    }
+    
+    #for {
+        font-size: calc(var(--heardSize)*.75);
+        margin-top: calc(var(--heardMargin)*.75);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #what {
+        font-size: var(--whatSize);
+    }
+    
+    #seen {
+        font-size: var(--seenSize);
+        margin-top: var(--seenMargin);
+    }
+    
+    #heard {
+        font-size: var(--heardSize);
+        margin-top: var(--heardMargin);
+    }
+
+    #vote {
+        font-size: var(--voteSize);
+    }
+
+    #gammon {
+        font-size: var(--gammonSize);
+        margin-top: var(--seenMargin);
+    }
+
+    #for {
+        font-size: var(--forSize);
+        margin-top: var(--heardMargin);
+    }
+}

@@ -1,0 +1,103 @@
+/* AboutPage.css */
+
+/* Existing styles */
+
+.about-text {
+    font-weight: normal;
+    font-family: Roboto;
+}
+
+.header {
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-text {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-text {
+        font-size: 30px;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .about-text {
+        font-size: 25px;
+        padding: 0 30px;
+    }
+}
+
+.about-video-container {
+    position: relative;
+}
+
+.about-video {
+    width: 100%; /* Make the video fill its container horizontally */
+    height: 100%; /* Make the video fill its container vertically */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px;
+    border: solid black
+}
+
+.images {
+    display: flex;
+    flex-direction: column; /* Ensure images are displayed in a vertical column */
+    align-items: center; /* Center images horizontally */
+}
+
+.image {
+    width: 100%; /* Set a width percentage for the images */
+    margin: 10px; /* Add margin to space out the images */
+    max-width: 700px; /* Set a maximum width for the images */
+}
+
+.image img {
+    width: 100%; /* Make images fill their parent container */
+    max-width: 100%; /* Set maximum width for images */
+    height: auto; /* Ensure images maintain aspect ratio */
+    border-radius: 10px;
+    border: solid black;
+}
+
+/* Additional styles for mrgt and smn images */
+.mrgt-image img,
+.smn-image img {
+    max-width: 80%; /* Set maximum width for mrgt and smn images */
+}
+
+.mrgt-image img {
+    border: solid black;
+    border-radius: 10px;
+}
+
+/* Additional styles for sendmenow-button */
+.sendmenow-button {
+    display: inline-block;
+    padding: 12px 24px; /* Adjust padding for spacing */
+    font-size: 24px;
+    color: #fff;
+    background-color: #3C809E; /* SendMeNow blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1.5px; /* Add spacing between characters */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.sendmenow-button:hover {
+    background-color: #1E5374; /* Darker shade of SendMeNow blue on hover */
+}
+
+.image p {
+    font-size: 20px; /* Set the font size for image captions */
+    font-family: Roboto;
+}
